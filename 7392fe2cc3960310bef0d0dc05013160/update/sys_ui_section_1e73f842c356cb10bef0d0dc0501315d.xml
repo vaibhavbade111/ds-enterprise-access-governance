@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="1e73f842c356cb10bef0d0dc0501315d" sys_domain="global" table="x_2098628_ds_ent_0_employee_location" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>location_name</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-26 18:27:35</sys_created_on>
+            <sys_id>8dc33882c356cb10bef0d0dc05013115</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_2098628_ds_ent_0_employee_location" sys_domain="global" view="Default view">1e73f842c356cb10bef0d0dc0501315d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-26 18:27:35</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>location_code</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-26 18:28:12</sys_created_on>
+            <sys_id>c6e3bc82c356cb10bef0d0dc05013141</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_2098628_ds_ent_0_employee_location" sys_domain="global" view="Default view">1e73f842c356cb10bef0d0dc0501315d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-26 18:28:12</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>region</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-26 18:28:59</sys_created_on>
+            <sys_id>e114f0c2c356cb10bef0d0dc050131d7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_2098628_ds_ent_0_employee_location" sys_domain="global" view="Default view">1e73f842c356cb10bef0d0dc0501315d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-26 18:28:59</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>description</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-26 18:36:29</sys_created_on>
+            <sys_id>23c5fc86c356cb10bef0d0dc050131c3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_2098628_ds_ent_0_employee_location" sys_domain="global" view="Default view">1e73f842c356cb10bef0d0dc0501315d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-26 18:36:29</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>active</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-26 18:37:10</sys_created_on>
+            <sys_id>6df5b4c6c356cb10bef0d0dc050131bf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_2098628_ds_ent_0_employee_location" sys_domain="global" view="Default view">1e73f842c356cb10bef0d0dc0501315d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-26 18:37:10</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_2098628_ds_ent_0_employee_location</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-26 18:26:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1e73f842c356cb10bef0d0dc0501315d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_2098628_ds_ent_0_employee_location</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="DS Enterprise Access Governance" source="x_2098628_ds_ent_0">7392fe2cc3960310bef0d0dc05013160</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="DS Enterprise Access Governance">7392fe2cc3960310bef0d0dc05013160</sys_scope>
+            <sys_update_name>sys_ui_section_1e73f842c356cb10bef0d0dc0501315d</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-26 18:26:18</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

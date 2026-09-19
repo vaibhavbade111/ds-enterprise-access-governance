@@ -1,0 +1,1007 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=5541000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>access_governance_task_closure_flow</internal_name>
+        <label_cache>[{"name":"undefined","label":" - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record","usedInstances":{},"attributes":{}},{"name":"Updated_1.current.parent.parent.sys_id","label":"Trigger - Record Updated➛Catalog Task Record➛Parent➛Parent➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"task","column_name":"sys_id","choices":[{"order":0.0}],"usedInstances":{"1fa9e6fe-93bf-475a-a57c-1e7650c8eef4":[null]}},{"name":"Updated_1.current.parent","label":"Trigger - Record Updated➛Catalog Task Record➛Parent","reference":"task","reference_display":"Task","type":"reference","base_type":"reference","parent_table_name":"sc_task","column_name":"parent","choices":[{"order":0.0}],"usedInstances":{"cb151ad8-a8b9-4f33-b356-5f6081f8dbe0":["record"]}},{"name":"Updated_1.current.parent.sys_id","label":"Trigger - Record Updated➛Catalog Task Record➛Parent➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"task","column_name":"sys_id","choices":[{"order":0.0}],"usedInstances":{"1fa9e6fe-93bf-475a-a57c-1e7650c8eef4":[null]}},{"name":"1fa9e6fe-93bf-475a-a57c-1e7650c8eef4.Record","label":"1 - Look Up Record➛Access Request Record","reference":"x_2098628_ds_ent_0_access_request","reference_display":"Access Request","type":"reference","base_type":"reference","usedInstances":{"3ebeee81-0361-454b-b42a-cc3a415c34c5":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master_snapshot>490c38cdc35f4f90bef0d0dc050131ad</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Access Governance Task Closure Flow</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>690c78cdc35f4f90bef0d0dc05013191</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-11 08:00:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8ce6e88dc39b4f90bef0d0dc0501313a</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>Access Governance Task Closure Flow</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="DS Enterprise Access Governance" source="x_2098628_ds_ent_0">7392fe2cc3960310bef0d0dc05013160</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DS Enterprise Access Governance">7392fe2cc3960310bef0d0dc05013160</sys_scope>
+        <sys_update_name>sys_hub_flow_8ce6e88dc39b4f90bef0d0dc0501313a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-11 09:32:32</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>ce0cb8cdc35f4f90bef0d0dc05013112</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=8ce6e88dc39b4f90bef0d0dc0501313a"/>
+    <sys_variable_value action="delete_multiple" query="document_key=8ce6e88dc39b4f90bef0d0dc0501313a"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="sc_task">state=3^short_descriptionSTARTSWITHProvision Access<item display_value="Closed Complete" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="3"/>
+            <item endquery="false" field="short_description" goto="false" newquery="false" operator="STARTSWITH" or="false" value="Provision Access"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>false</on_insert>
+        <on_update>true</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-11 09:32:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>690c78cdc35f4f90bef0d0dc05013191</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="DS Enterprise Access Governance">7392fe2cc3960310bef0d0dc05013160</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-11 09:32:32</sys_updated_on>
+        <table>sc_task</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>8ce6e88dc39b4f90bef0d0dc0501313a</identifier>
+        <identifier_type>flow</identifier_type>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-11 09:32:32</sys_created_on>
+        <sys_id>ad0c78cdc35f4f90bef0d0dc05013192</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-11 09:32:32</sys_updated_on>
+        <trigger display_value="">690c78cdc35f4f90bef0d0dc05013191</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=8ce6e88dc39b4f90bef0d0dc0501313a^sys_idNOT INad0c78cdc35f4f90bef0d0dc05013192"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=8ce6e88dc39b4f90bef0d0dc0501313a"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=8ce6e88dc39b4f90bef0d0dc0501313a^sys_idNOT IN40e6e88dc39b4f90bef0d0dc0501313c"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>8ce6e88dc39b4f90bef0d0dc0501313a</id>
+        <name>Access Governance Task Closure Flow</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-11 08:00:08</sys_created_on>
+        <sys_id>40e6e88dc39b4f90bef0d0dc0501313c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-11 08:00:08</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=40e6e88dc39b4f90bef0d0dc0501313c"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=8ce6e88dc39b4f90bef0d0dc0501313a^sys_idNOT IN25172c45c3db4f90bef0d0dc05013140,a9172c45c3db4f90bef0d0dc0501312b,b5172c45c3db4f90bef0d0dc0501314b"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Access Governance Task Closure Flow">8ce6e88dc39b4f90bef0d0dc0501313a</model>
+        <model_id>8ce6e88dc39b4f90bef0d0dc0501313a</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_8ce6e88dc39b4f90bef0d0dc0501313a</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-11 08:01:03</sys_created_on>
+        <sys_id>25172c45c3db4f90bef0d0dc05013140</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="DS Enterprise Access Governance">7392fe2cc3960310bef0d0dc05013160</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-11 09:32:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=25172c45c3db4f90bef0d0dc05013140"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Access Governance Task Closure Flow">8ce6e88dc39b4f90bef0d0dc0501313a</model>
+        <model_id>8ce6e88dc39b4f90bef0d0dc0501313a</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_8ce6e88dc39b4f90bef0d0dc0501313a</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-11 08:01:03</sys_created_on>
+        <sys_id>a9172c45c3db4f90bef0d0dc0501312b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="DS Enterprise Access Governance">7392fe2cc3960310bef0d0dc05013160</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-11 09:32:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a9172c45c3db4f90bef0d0dc0501312b"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Access Governance Task Closure Flow">8ce6e88dc39b4f90bef0d0dc0501313a</model>
+        <model_id>8ce6e88dc39b4f90bef0d0dc0501313a</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_8ce6e88dc39b4f90bef0d0dc0501313a</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-11 08:01:04</sys_created_on>
+        <sys_id>b5172c45c3db4f90bef0d0dc0501314b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="DS Enterprise Access Governance">7392fe2cc3960310bef0d0dc05013160</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-11 08:01:04</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b5172c45c3db4f90bef0d0dc0501314b"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=8ce6e88dc39b4f90bef0d0dc0501313a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8ce6e88dc39b4f90bef0d0dc0501313a"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=8ce6e88dc39b4f90bef0d0dc0501313a^sys_idNOT IN1517e845c3db4f90bef0d0dc05013176"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Access Governance Task Closure Flow">8ce6e88dc39b4f90bef0d0dc0501313a</flow>
+        <generation_source/>
+        <name>Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-11 08:01:02</sys_created_on>
+        <sys_id>1517e845c3db4f90bef0d0dc05013176</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-11 09:32:29</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=8ce6e88dc39b4f90bef0d0dc0501313a^sys_idNOT IN69903809c31f4f90bef0d0dc0501313e,f1ab3c8dc35f4f90bef0d0dc05013105"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Access Governance Task Closure Flow">8ce6e88dc39b4f90bef0d0dc0501313a</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-11 08:42:34</sys_created_on>
+        <sys_id>69903809c31f4f90bef0d0dc0501313e</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="DS Enterprise Access Governance">7392fe2cc3960310bef0d0dc05013160</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-11 09:43:46</sys_updated_on>
+        <ui_id>1fa9e6fe-93bf-475a-a57c-1e7650c8eef4</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VX227bOBD9FUHPjleyfM1bkcBAgW4DJGleugVBiVRMLE2qJJXEMfzvO5Qo2WsrttXYRRb7JGg44tzOmRl9X/qM+Jf+gASTdDIZjEdBEEVBMBxGCQ7jOBomcRDHod/xBZ5T0NRSGWQWGQXRE+Z5LcM6ARFhOuN48eBOsGek9wryZMY4UVT4l99/dPwMK7jNUOVfLreOjnWH45hyUL0D29596U+Di8XjEmxIllTvX9ynV5VQKmJdiTo+fTFUEAo+pJhr2vHnWBBspFrUEkUxuRF8LZgxYeA23yq/aPYK9qKe1UspRJXQ8qx+RS5FpTi9xgbfGZUnJldOtXRWQz6WdZh1Ihty7twPVp21/qvVx9v6hG5+EK4g34SmOOfm6tdshm1t9qzNMsCbzDAJVfcjWxcc8yp8yfO5+FrW0q89fGgAW3ly/Qbmcg3JppktqK2QK1d6N5PPt1U1pkwUfrlDLhPM6zdsjGJxbmxeln5KUMooJ4gJzoS1BGWz8KGczsECmuMsY+IRZUo+seJWiGXefeTw0k25fLa5YI+iixMbeReAhbtTkF8X4gesmM3Cn3ANfNyxBmfwqbOHdKJYZtAzI4/UrK1XWkSaZ8z/bjp3iENVoYrw/FXH1wt9xbHW62QDTNHP3OagTL3LHioKVXxSePEJIniiLlEWAwVtw720xWSLomWhN/Cy2z9ad44jXKiycGMR6cWLt7xyraOseaHx7/YxtQfe1/KggvfJWsg4OE0LaaL4LgVbMXCXWhZq72DWGQnUxNj2wC9zcwj9k71Da7LGGUvRHPLJMk6RoglgRyOsKEplLggqg9ughU12ypQ2TnmXJrcUSi88CZjyzIx6hbZXa7ek0OE4Kgp9Tr0qEGdNexCIVwTi1YG0C7vNyO6fjG/9E/FtPQ6nmPGiGtrQbKOcVCmp3hjbBwq5BxFHzvQjnQpP6tT7h34TBRqH/wFfT7wSnKdxnX4wJxTH/R4ejqIwDIIwIKNgPBqF42GcDvGon645ipAWCewScHMKUIHrUQWNqs7Bbv8pF4q2jeYIryoIXkvxVx4EvZHxrFtQX69y67DjrqHEUnKKxVZHuYeJ8MfU+e/wOvhwXeW3TPH3siFn99uZLkWNuT7X0M/ZN8F+5vSzhdiYBr1xSJKL8SgcXfRTMryYEDy4wJN4MIoITfrpORZhMti7hW6sAokUhNm49OZ/00IjRizgI7JcfssgZEpQ2E1yBTUxXSCWfZRqq9UuH9tf0I65R8RXMfdqM8CmoKtxvy370nRBNZ5OSNDgv0TRD7lon2mfJnv3UNxf46m8bs2fF9QLJuNhb4xgw7RGA9guoSIatgfoDNrsMuZTce7d1uctCXHY14oQ987ZLd8dDYrXpr/N4rOtv83g//m3+TG3NnCIcUAIKkuoZa6KVD6hhOe6OFBYaPebc7qZ8+MfxFioCcQVAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=69903809c31f4f90bef0d0dc0501313e"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Access Governance Task Closure Flow">8ce6e88dc39b4f90bef0d0dc0501313a</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-11 09:30:54</sys_created_on>
+        <sys_id>f1ab3c8dc35f4f90bef0d0dc05013105</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="DS Enterprise Access Governance">7392fe2cc3960310bef0d0dc05013160</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-11 09:43:46</sys_updated_on>
+        <ui_id>3ebeee81-0361-454b-b42a-cc3a415c34c5</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VV207jMBD9lcrPbZU0bWn7hqiQVmJBKiteWGRN7ElryblgO4Vu1X/fSeKEChAXiRdE3jwXzzknc5LbPVOSLdgYZRDOw6mIwigaBcFoNg7jaRSHIxkBYsj6LIMUqdKgyI2k8xZ0WQX2+zCBOU4THMyjOBmMTyYwgMmJGIR4Mp0EYoaYjIeruu9woE6pbKFhd+MvoIjYKC0NZmxxe9dnBRia5dCwxf5Z6qNgNcSoqXTVon2O3u2K6ixzUaaYOa7a4IXvXPpM79eSMtRUwQmDPsNHh5lEApKAtthnKWQSXG52bOFMSQGDIK8yvesqNipzDdEUHq36R5PHQVWXIDETXoTuyL1ATThZgoNrulm40nR65UqgbTSRmECp3dlxrCm4KpzKs6bFQazb7lyXaXbZKMK6C47eR2kJBBYVzwp5Qyu53uQPqxbkucpqSTxFnQvQ3QmcMyouXQVnz1BjrXEKRaGyNS9MvlV1M0FJh2tNh2Gi8weaadU6G4KocA9JVRieU3xZh2/AqIrEb7qGmg99Znf2TIO1T1RIQ35fVkgaYp4Cr1WoJeD1JlTNwqjCndKoLXrgh763Qzx5a8PE/Gmhju58ssQjHwXz2XQ049LyanzAQdC7sdzgfYnWvTTBaZ3vrbr85yzxAcCtJf7Ui/A6Ae+KF7GL497eZZPwnph8mSdm38kTnsa3N8V7VghGb35sjzap3n57ZIN8iwa05taBK+3fMggiSdwKTYssX1rgvfLPOeIDuFtHnCvU0r5CpLUDEghwyBtizyzhk70bn+x+FV/mi3Aa1M83cseP+WPc/Qertzz4QgkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f1ab3c8dc35f4f90bef0d0dc05013105"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=8ce6e88dc39b4f90bef0d0dc0501313a"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=8ce6e88dc39b4f90bef0d0dc0501313a"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=8ce6e88dc39b4f90bef0d0dc0501313a"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=8ce6e88dc39b4f90bef0d0dc0501313a"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_8ce6e88dc39b4f90bef0d0dc0501313a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-11 08:01:04</sys_created_on>
+        <sys_id>31172c45c3db4f90bef0d0dc05013147</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="DS Enterprise Access Governance" source="x_2098628_ds_ent_0">7392fe2cc3960310bef0d0dc05013160</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DS Enterprise Access Governance">7392fe2cc3960310bef0d0dc05013160</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-11 08:01:04</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_8ce6e88dc39b4f90bef0d0dc0501313a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-11 08:01:04</sys_created_on>
+        <sys_id>39172c45c3db4f90bef0d0dc0501315f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="DS Enterprise Access Governance" source="x_2098628_ds_ent_0">7392fe2cc3960310bef0d0dc05013160</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DS Enterprise Access Governance">7392fe2cc3960310bef0d0dc05013160</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-11 08:01:04</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_8ce6e88dc39b4f90bef0d0dc0501313a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-11 08:01:03</sys_created_on>
+        <sys_id>ed172c45c3db4f90bef0d0dc0501313b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="DS Enterprise Access Governance" source="x_2098628_ds_ent_0">7392fe2cc3960310bef0d0dc05013160</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DS Enterprise Access Governance">7392fe2cc3960310bef0d0dc05013160</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-11 08:01:03</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_8ce6e88dc39b4f90bef0d0dc0501313a"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_8ce6e88dc39b4f90bef0d0dc0501313a"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>access_governance_task_closure_flow</internal_name>
+        <label_cache>[{"name":"undefined","label":" - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record","usedInstances":{},"attributes":{}},{"name":"Updated_1.current.parent.parent.sys_id","label":"Trigger - Record Updated➛Catalog Task Record➛Parent➛Parent➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"task","column_name":"sys_id","choices":[{"order":0.0}],"usedInstances":{"1fa9e6fe-93bf-475a-a57c-1e7650c8eef4":[null]}},{"name":"Updated_1.current.parent","label":"Trigger - Record Updated➛Catalog Task Record➛Parent","reference":"task","reference_display":"Task","type":"reference","base_type":"reference","parent_table_name":"sc_task","column_name":"parent","choices":[{"order":0.0}],"usedInstances":{"cb151ad8-a8b9-4f33-b356-5f6081f8dbe0":["record"]}},{"name":"Updated_1.current.parent.sys_id","label":"Trigger - Record Updated➛Catalog Task Record➛Parent➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"task","column_name":"sys_id","choices":[{"order":0.0}],"usedInstances":{"1fa9e6fe-93bf-475a-a57c-1e7650c8eef4":[null]}},{"name":"1fa9e6fe-93bf-475a-a57c-1e7650c8eef4.Record","label":"1 - Look Up Record➛Access Request Record","reference":"x_2098628_ds_ent_0_access_request","reference_display":"Access Request","type":"reference","base_type":"reference","usedInstances":{"3ebeee81-0361-454b-b42a-cc3a415c34c5":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>Access Governance Task Closure Flow</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Access Governance Task Closure Flow">8ce6e88dc39b4f90bef0d0dc0501313a</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-11 09:32:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>490c38cdc35f4f90bef0d0dc050131ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="DS Enterprise Access Governance">7392fe2cc3960310bef0d0dc05013160</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-11 09:32:30</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=490c38cdc35f4f90bef0d0dc050131ad"/>
+    <sys_variable_value action="delete_multiple" query="document_key=490c38cdc35f4f90bef0d0dc050131ad"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=490c38cdc35f4f90bef0d0dc050131ad"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=490c38cdc35f4f90bef0d0dc050131ad^sys_idNOT IN810c38cdc35f4f90bef0d0dc050131af"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>490c38cdc35f4f90bef0d0dc050131ad</id>
+        <name>Access Governance Task Closure Flow</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-11 09:32:30</sys_created_on>
+        <sys_id>810c38cdc35f4f90bef0d0dc050131af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-11 09:32:30</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=810c38cdc35f4f90bef0d0dc050131af"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=490c38cdc35f4f90bef0d0dc050131ad^sys_idNOT IN550c78cdc35f4f90bef0d0dc05013127,810c38cdc35f4f90bef0d0dc050131b1,8d0c38cdc35f4f90bef0d0dc050131d0"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Access Governance Task Closure Flow">490c38cdc35f4f90bef0d0dc050131ad</model>
+        <model_id>490c38cdc35f4f90bef0d0dc050131ad</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_490c38cdc35f4f90bef0d0dc050131ad</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-11 09:32:30</sys_created_on>
+        <sys_id>550c78cdc35f4f90bef0d0dc05013127</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="DS Enterprise Access Governance">7392fe2cc3960310bef0d0dc05013160</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-11 09:32:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=550c78cdc35f4f90bef0d0dc05013127"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Access Governance Task Closure Flow">490c38cdc35f4f90bef0d0dc050131ad</model>
+        <model_id>490c38cdc35f4f90bef0d0dc050131ad</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_490c38cdc35f4f90bef0d0dc050131ad</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-11 09:32:30</sys_created_on>
+        <sys_id>810c38cdc35f4f90bef0d0dc050131b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="DS Enterprise Access Governance">7392fe2cc3960310bef0d0dc05013160</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-11 09:32:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=810c38cdc35f4f90bef0d0dc050131b1"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Access Governance Task Closure Flow">490c38cdc35f4f90bef0d0dc050131ad</model>
+        <model_id>490c38cdc35f4f90bef0d0dc050131ad</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_490c38cdc35f4f90bef0d0dc050131ad</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-11 09:32:30</sys_created_on>
+        <sys_id>8d0c38cdc35f4f90bef0d0dc050131d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="DS Enterprise Access Governance">7392fe2cc3960310bef0d0dc05013160</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-11 09:32:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8d0c38cdc35f4f90bef0d0dc050131d0"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=490c38cdc35f4f90bef0d0dc050131ad"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=490c38cdc35f4f90bef0d0dc050131ad"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=490c38cdc35f4f90bef0d0dc050131ad^sys_idNOT IN590c78cdc35f4f90bef0d0dc05013163"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Access Governance Task Closure Flow">490c38cdc35f4f90bef0d0dc050131ad</flow>
+        <generation_source/>
+        <name>Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-11 09:32:31</sys_created_on>
+        <sys_id>590c78cdc35f4f90bef0d0dc05013163</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-11 09:32:31</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=490c38cdc35f4f90bef0d0dc050131ad^sys_idNOT IN550c78cdc35f4f90bef0d0dc05013161,dd0c78cdc35f4f90bef0d0dc0501315f"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Access Governance Task Closure Flow">490c38cdc35f4f90bef0d0dc050131ad</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-11 09:32:31</sys_created_on>
+        <sys_id>550c78cdc35f4f90bef0d0dc05013161</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="DS Enterprise Access Governance">7392fe2cc3960310bef0d0dc05013160</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-11 09:32:31</sys_updated_on>
+        <ui_id>3ebeee81-0361-454b-b42a-cc3a415c34c5</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VV207jMBD9lcrPbZU0bWn7hqiQVmJBKiteWGRN7ElryblgO4Vu1X/fSeKEChAXiRdE3jwXzzknc5LbPVOSLdgYZRDOw6mIwigaBcFoNg7jaRSHIxkBYsj6LIMUqdKgyI2k8xZ0WQX2+zCBOU4THMyjOBmMTyYwgMmJGIR4Mp0EYoaYjIeruu9woE6pbKFhd+MvoIjYKC0NZmxxe9dnBRia5dCwxf5Z6qNgNcSoqXTVon2O3u2K6ixzUaaYOa7a4IXvXPpM79eSMtRUwQmDPsNHh5lEApKAtthnKWQSXG52bOFMSQGDIK8yvesqNipzDdEUHq36R5PHQVWXIDETXoTuyL1ATThZgoNrulm40nR65UqgbTSRmECp3dlxrCm4KpzKs6bFQazb7lyXaXbZKMK6C47eR2kJBBYVzwp5Qyu53uQPqxbkucpqSTxFnQvQ3QmcMyouXQVnz1BjrXEKRaGyNS9MvlV1M0FJh2tNh2Gi8weaadU6G4KocA9JVRieU3xZh2/AqIrEb7qGmg99Znf2TIO1T1RIQ35fVkgaYp4Cr1WoJeD1JlTNwqjCndKoLXrgh763Qzx5a8PE/Gmhju58ssQjHwXz2XQ049LyanzAQdC7sdzgfYnWvTTBaZ3vrbr85yzxAcCtJf7Ui/A6Ae+KF7GL497eZZPwnph8mSdm38kTnsa3N8V7VghGb35sjzap3n57ZIN8iwa05taBK+3fMggiSdwKTYssX1rgvfLPOeIDuFtHnCvU0r5CpLUDEghwyBtizyzhk70bn+x+FV/mi3Aa1M83cseP+WPc/Qertzz4QgkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=550c78cdc35f4f90bef0d0dc05013161"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Access Governance Task Closure Flow">490c38cdc35f4f90bef0d0dc050131ad</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-11 09:32:31</sys_created_on>
+        <sys_id>dd0c78cdc35f4f90bef0d0dc0501315f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="DS Enterprise Access Governance">7392fe2cc3960310bef0d0dc05013160</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-11 09:32:31</sys_updated_on>
+        <ui_id>1fa9e6fe-93bf-475a-a57c-1e7650c8eef4</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VX227bOBD9FUHPjleyfM1bkcBAgW4DJGleugVBiVRMLE2qJJXEMfzvO5Qo2WsrttXYRRb7JGg44tzOmRl9X/qM+Jf+gASTdDIZjEdBEEVBMBxGCQ7jOBomcRDHod/xBZ5T0NRSGWQWGQXRE+Z5LcM6ARFhOuN48eBOsGek9wryZMY4UVT4l99/dPwMK7jNUOVfLreOjnWH45hyUL0D29596U+Di8XjEmxIllTvX9ynV5VQKmJdiTo+fTFUEAo+pJhr2vHnWBBspFrUEkUxuRF8LZgxYeA23yq/aPYK9qKe1UspRJXQ8qx+RS5FpTi9xgbfGZUnJldOtXRWQz6WdZh1Ihty7twPVp21/qvVx9v6hG5+EK4g34SmOOfm6tdshm1t9qzNMsCbzDAJVfcjWxcc8yp8yfO5+FrW0q89fGgAW3ly/Qbmcg3JppktqK2QK1d6N5PPt1U1pkwUfrlDLhPM6zdsjGJxbmxeln5KUMooJ4gJzoS1BGWz8KGczsECmuMsY+IRZUo+seJWiGXefeTw0k25fLa5YI+iixMbeReAhbtTkF8X4gesmM3Cn3ANfNyxBmfwqbOHdKJYZtAzI4/UrK1XWkSaZ8z/bjp3iENVoYrw/FXH1wt9xbHW62QDTNHP3OagTL3LHioKVXxSePEJIniiLlEWAwVtw720xWSLomWhN/Cy2z9ad44jXKiycGMR6cWLt7xyraOseaHx7/YxtQfe1/KggvfJWsg4OE0LaaL4LgVbMXCXWhZq72DWGQnUxNj2wC9zcwj9k71Da7LGGUvRHPLJMk6RoglgRyOsKEplLggqg9ughU12ypQ2TnmXJrcUSi88CZjyzIx6hbZXa7ek0OE4Kgp9Tr0qEGdNexCIVwTi1YG0C7vNyO6fjG/9E/FtPQ6nmPGiGtrQbKOcVCmp3hjbBwq5BxFHzvQjnQpP6tT7h34TBRqH/wFfT7wSnKdxnX4wJxTH/R4ejqIwDIIwIKNgPBqF42GcDvGon645ipAWCewScHMKUIHrUQWNqs7Bbv8pF4q2jeYIryoIXkvxVx4EvZHxrFtQX69y67DjrqHEUnKKxVZHuYeJ8MfU+e/wOvhwXeW3TPH3siFn99uZLkWNuT7X0M/ZN8F+5vSzhdiYBr1xSJKL8SgcXfRTMryYEDy4wJN4MIoITfrpORZhMti7hW6sAokUhNm49OZ/00IjRizgI7JcfssgZEpQ2E1yBTUxXSCWfZRqq9UuH9tf0I65R8RXMfdqM8CmoKtxvy370nRBNZ5OSNDgv0TRD7lon2mfJnv3UNxf46m8bs2fF9QLJuNhb4xgw7RGA9guoSIatgfoDNrsMuZTce7d1uctCXHY14oQ987ZLd8dDYrXpr/N4rOtv83g//m3+TG3NnCIcUAIKkuoZa6KVD6hhOe6OFBYaPebc7qZ8+MfxFioCcQVAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=dd0c78cdc35f4f90bef0d0dc0501315f"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=490c38cdc35f4f90bef0d0dc050131ad"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=490c38cdc35f4f90bef0d0dc050131ad"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=490c38cdc35f4f90bef0d0dc050131ad"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=490c38cdc35f4f90bef0d0dc050131ad"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_490c38cdc35f4f90bef0d0dc050131ad</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-11 09:32:30</sys_created_on>
+        <sys_id>410c38cdc35f4f90bef0d0dc050131c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="DS Enterprise Access Governance" source="x_2098628_ds_ent_0">7392fe2cc3960310bef0d0dc05013160</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DS Enterprise Access Governance">7392fe2cc3960310bef0d0dc05013160</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-11 09:32:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_490c38cdc35f4f90bef0d0dc050131ad</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-11 09:32:30</sys_created_on>
+        <sys_id>550c38cdc35f4f90bef0d0dc050131d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="DS Enterprise Access Governance" source="x_2098628_ds_ent_0">7392fe2cc3960310bef0d0dc05013160</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DS Enterprise Access Governance">7392fe2cc3960310bef0d0dc05013160</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-11 09:32:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_490c38cdc35f4f90bef0d0dc050131ad</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-11 09:32:31</sys_created_on>
+        <sys_id>550c78cdc35f4f90bef0d0dc0501312e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="DS Enterprise Access Governance" source="x_2098628_ds_ent_0">7392fe2cc3960310bef0d0dc05013160</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DS Enterprise Access Governance">7392fe2cc3960310bef0d0dc05013160</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-11 09:32:31</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_490c38cdc35f4f90bef0d0dc050131ad"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_490c38cdc35f4f90bef0d0dc050131ad"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>8ce6e88dc39b4f90bef0d0dc0501313a</sys_id>
+        <latest_snapshot>490c38cdc35f4f90bef0d0dc050131ad</latest_snapshot>
+        <compiler_build>glide-australia-02-11-2026__patch3-05-25-2026_06-12-2026_1106.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=8ce6e88dc39b4f90bef0d0dc0501313a^sys_idNOT INad0c78cdc35f4f90bef0d0dc05013193"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.Every</binding_strategy>
+        <plan>{"@class":"com.snc.process_flow.engine.serialization.plan_data.ChunkingPlanData","chunk_data":{"table":"sys_flow_trigger_plan","id":"ad0c78cdc35f4f90bef0d0dc05013193","name":"plan","plan_signature":null},"plan_data":"CHUNKING_PLAN"}</plan>
+        <plan_id>8ce6e88dc39b4f90bef0d0dc0501313a</plan_id>
+        <snapshot>069ef805c39f4f90bef0d0dc05013164</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-11 09:32:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ad0c78cdc35f4f90bef0d0dc05013193</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-11 09:32:32</sys_updated_on>
+        <trigger display_value="">690c78cdc35f4f90bef0d0dc05013191</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=8ce6e88dc39b4f90bef0d0dc0501313a"/>
+</record_update>

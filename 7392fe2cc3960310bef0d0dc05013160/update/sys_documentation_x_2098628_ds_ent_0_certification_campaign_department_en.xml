@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="department" label="Department" language="en" table="x_2098628_ds_ent_0_certification_campaign">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>department</element>
+            <help/>
+            <hint/>
+            <label>Department</label>
+            <language>en</language>
+            <name>x_2098628_ds_ent_0_certification_campaign</name>
+            <plural>Departments</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-04 05:23:54</sys_created_on>
+            <sys_id>c9b694b4c3624390bef0d0dc050131d6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Department</sys_name>
+            <sys_package display_value="DS Enterprise Access Governance" source="x_2098628_ds_ent_0">7392fe2cc3960310bef0d0dc05013160</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="DS Enterprise Access Governance">7392fe2cc3960310bef0d0dc05013160</sys_scope>
+            <sys_update_name>sys_documentation_x_2098628_ds_ent_0_certification_campaign_department_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-04 05:23:54</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

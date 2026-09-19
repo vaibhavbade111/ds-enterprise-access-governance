@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Lifecycle" section_id="48610eb3c3128b50bef0d0dc050131ee" sys_domain="global" table="x_2098628_ds_ent_0_access_review" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>reminder_sent</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-01 10:36:05</sys_created_on>
+            <sys_id>b8618eb3c3128b50bef0d0dc05013127</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Lifecycle" display_value="Lifecycle" name="x_2098628_ds_ent_0_access_review" sys_domain="global" view="Default view">48610eb3c3128b50bef0d0dc050131ee</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-01 10:36:05</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>escalated_to</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-01 10:36:05</sys_created_on>
+            <sys_id>74618eb3c3128b50bef0d0dc05013128</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Lifecycle" display_value="Lifecycle" name="x_2098628_ds_ent_0_access_review" sys_domain="global" view="Default view">48610eb3c3128b50bef0d0dc050131ee</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-01 10:36:05</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>next_review_date</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-01 10:36:05</sys_created_on>
+            <sys_id>30618eb3c3128b50bef0d0dc05013129</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Lifecycle" display_value="Lifecycle" name="x_2098628_ds_ent_0_access_review" sys_domain="global" view="Default view">48610eb3c3128b50bef0d0dc050131ee</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-01 10:36:05</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-01 10:36:05</sys_created_on>
+            <sys_id>f8618eb3c3128b50bef0d0dc05013129</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Lifecycle" display_value="Lifecycle" name="x_2098628_ds_ent_0_access_review" sys_domain="global" view="Default view">48610eb3c3128b50bef0d0dc050131ee</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-01 10:36:05</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>escalated</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-01 10:36:05</sys_created_on>
+            <sys_id>b4618eb3c3128b50bef0d0dc0501312a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Lifecycle" display_value="Lifecycle" name="x_2098628_ds_ent_0_access_review" sys_domain="global" view="Default view">48610eb3c3128b50bef0d0dc050131ee</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-01 10:36:05</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>active</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-01 10:36:05</sys_created_on>
+            <sys_id>70618eb3c3128b50bef0d0dc0501312b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Lifecycle" display_value="Lifecycle" name="x_2098628_ds_ent_0_access_review" sys_domain="global" view="Default view">48610eb3c3128b50bef0d0dc050131ee</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-01 10:36:05</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Lifecycle</caption>
+            <header>false</header>
+            <name>x_2098628_ds_ent_0_access_review</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-01 10:36:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>48610eb3c3128b50bef0d0dc050131ee</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_2098628_ds_ent_0_access_review</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="DS Enterprise Access Governance" source="x_2098628_ds_ent_0">7392fe2cc3960310bef0d0dc05013160</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="DS Enterprise Access Governance">7392fe2cc3960310bef0d0dc05013160</sys_scope>
+            <sys_update_name>sys_ui_section_48610eb3c3128b50bef0d0dc050131ee</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-01 10:36:01</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

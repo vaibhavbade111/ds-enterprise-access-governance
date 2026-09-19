@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="System Information" section_id="cf90c273c3128b50bef0d0dc05013178" sys_domain="global" table="x_2098628_ds_ent_0_approval_history" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>approval_source</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-01 10:32:43</sys_created_on>
+            <sys_id>6b900673c3128b50bef0d0dc050131a5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="System Information" display_value="System Information" name="x_2098628_ds_ent_0_approval_history" sys_domain="global" view="Default view">cf90c273c3128b50bef0d0dc05013178</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-01 10:32:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>active</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-01 10:32:43</sys_created_on>
+            <sys_id>27900673c3128b50bef0d0dc050131a6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="System Information" display_value="System Information" name="x_2098628_ds_ent_0_approval_history" sys_domain="global" view="Default view">cf90c273c3128b50bef0d0dc05013178</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-01 10:32:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>notes</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-01 10:32:43</sys_created_on>
+            <sys_id>ef900673c3128b50bef0d0dc050131a6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="System Information" display_value="System Information" name="x_2098628_ds_ent_0_approval_history" sys_domain="global" view="Default view">cf90c273c3128b50bef0d0dc05013178</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-01 10:32:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-01 10:32:43</sys_created_on>
+            <sys_id>ab900673c3128b50bef0d0dc050131a7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="System Information" display_value="System Information" name="x_2098628_ds_ent_0_approval_history" sys_domain="global" view="Default view">cf90c273c3128b50bef0d0dc05013178</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-01 10:32:43</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>approval_method</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-01 10:32:43</sys_created_on>
+            <sys_id>67900673c3128b50bef0d0dc050131a8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="System Information" display_value="System Information" name="x_2098628_ds_ent_0_approval_history" sys_domain="global" view="Default view">cf90c273c3128b50bef0d0dc05013178</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-01 10:32:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>last_updated_reason</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-01 10:32:43</sys_created_on>
+            <sys_id>23900673c3128b50bef0d0dc050131a9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="System Information" display_value="System Information" name="x_2098628_ds_ent_0_approval_history" sys_domain="global" view="Default view">cf90c273c3128b50bef0d0dc05013178</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-01 10:32:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>System Information</caption>
+            <header>false</header>
+            <name>x_2098628_ds_ent_0_approval_history</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-01 10:32:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cf90c273c3128b50bef0d0dc05013178</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_2098628_ds_ent_0_approval_history</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="DS Enterprise Access Governance" source="x_2098628_ds_ent_0">7392fe2cc3960310bef0d0dc05013160</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="DS Enterprise Access Governance">7392fe2cc3960310bef0d0dc05013160</sys_scope>
+            <sys_update_name>sys_ui_section_cf90c273c3128b50bef0d0dc05013178</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-01 10:32:41</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

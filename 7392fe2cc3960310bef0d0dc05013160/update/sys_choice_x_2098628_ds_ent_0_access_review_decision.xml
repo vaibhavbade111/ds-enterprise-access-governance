@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="decision" table="x_2098628_ds_ent_0_access_review" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>decision</element>
+            <name>x_2098628_ds_ent_0_access_review</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-01 10:12:37</sys_created_on>
+            <sys_id>910cb5b3c3de4b50bef0d0dc050131ac</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>decision</sys_name>
+            <sys_package display_value="DS Enterprise Access Governance" source="x_2098628_ds_ent_0">7392fe2cc3960310bef0d0dc05013160</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="DS Enterprise Access Governance">7392fe2cc3960310bef0d0dc05013160</sys_scope>
+            <sys_update_name>sys_choice_x_2098628_ds_ent_0_access_review_decision</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-01 10:12:37</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>decision</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Retain Access</label>
+            <language>en</language>
+            <name>x_2098628_ds_ent_0_access_review</name>
+            <sequence>100</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-01 10:12:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>500cfd77c3de4b50bef0d0dc050131d5</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-01 10:12:54</sys_updated_on>
+            <value>retain</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>decision</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Revoke Access</label>
+            <language>en</language>
+            <name>x_2098628_ds_ent_0_access_review</name>
+            <sequence>200</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-01 10:13:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>150c31b7c3de4b50bef0d0dc0501315b</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-01 10:13:17</sys_updated_on>
+            <value>revoke</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>decision</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Modify Access</label>
+            <language>en</language>
+            <name>x_2098628_ds_ent_0_access_review</name>
+            <sequence>300</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-01 10:13:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>071cf1b7c3de4b50bef0d0dc05013142</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-01 10:13:37</sys_updated_on>
+            <value>modify</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

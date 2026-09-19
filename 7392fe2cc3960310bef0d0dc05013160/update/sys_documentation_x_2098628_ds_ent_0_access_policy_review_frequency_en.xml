@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="review_frequency" label="Review Frequency" language="en" table="x_2098628_ds_ent_0_access_policy">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>review_frequency</element>
+            <help/>
+            <hint/>
+            <label>Review Frequency</label>
+            <language>en</language>
+            <name>x_2098628_ds_ent_0_access_policy</name>
+            <plural>Review Frequencies</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-26 17:54:33</sys_created_on>
+            <sys_id>953c6482c316cb10bef0d0dc050131ee</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Review Frequency</sys_name>
+            <sys_package display_value="DS Enterprise Access Governance" source="x_2098628_ds_ent_0">7392fe2cc3960310bef0d0dc05013160</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="DS Enterprise Access Governance">7392fe2cc3960310bef0d0dc05013160</sys_scope>
+            <sys_update_name>sys_documentation_x_2098628_ds_ent_0_access_policy_review_frequency_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-26 17:54:33</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

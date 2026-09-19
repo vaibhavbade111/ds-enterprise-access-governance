@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="4f9a6e8fc3920750bef0d0dc050131fc" sys_domain="global" table="x_2098628_ds_ent_0_access_assignment" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-30 05:40:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>079aae8fc3920750bef0d0dc05013102</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_2098628_ds_ent_0_access_assignment" name="x_2098628_ds_ent_0_access_assignment" sys_domain="global" view="Default view">4f9a6e8fc3920750bef0d0dc050131fc</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_2098628_ds_ent_0_access_assignment" sys_domain="global" view="Default view">d83de26ec3d20350bef0d0dc05013152</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-30 05:40:44</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-30 05:40:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4b9aae8fc3920750bef0d0dc05013103</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_2098628_ds_ent_0_access_assignment" name="x_2098628_ds_ent_0_access_assignment" sys_domain="global" view="Default view">4f9a6e8fc3920750bef0d0dc050131fc</sys_ui_form>
+            <sys_ui_section caption="Origin Information" display_value="Origin Information" name="x_2098628_ds_ent_0_access_assignment" sys_domain="global" view="Default view">039a6e8fc3920750bef0d0dc050131ce</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-30 05:40:44</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-30 05:40:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4f9aae8fc3920750bef0d0dc05013116</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_2098628_ds_ent_0_access_assignment" name="x_2098628_ds_ent_0_access_assignment" sys_domain="global" view="Default view">4f9a6e8fc3920750bef0d0dc050131fc</sys_ui_form>
+            <sys_ui_section caption="Access Details" display_value="Access Details" name="x_2098628_ds_ent_0_access_assignment" sys_domain="global" view="Default view">c79a6e8fc3920750bef0d0dc050131d0</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-30 05:40:44</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-30 05:40:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4f9aae8fc3920750bef0d0dc0501311d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_2098628_ds_ent_0_access_assignment" name="x_2098628_ds_ent_0_access_assignment" sys_domain="global" view="Default view">4f9a6e8fc3920750bef0d0dc050131fc</sys_ui_form>
+            <sys_ui_section caption="Provisioning Details" display_value="Provisioning Details" name="x_2098628_ds_ent_0_access_assignment" sys_domain="global" view="Default view">439a6e8fc3920750bef0d0dc050131d2</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-30 05:40:44</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-30 05:40:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>479aae8fc3920750bef0d0dc05013125</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_2098628_ds_ent_0_access_assignment" name="x_2098628_ds_ent_0_access_assignment" sys_domain="global" view="Default view">4f9a6e8fc3920750bef0d0dc050131fc</sys_ui_form>
+            <sys_ui_section caption="Lifecycle" display_value="Lifecycle" name="x_2098628_ds_ent_0_access_assignment" sys_domain="global" view="Default view">cb9a6e8fc3920750bef0d0dc050131d3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-30 05:40:45</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-30 05:40:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c39aae8fc3920750bef0d0dc05013146</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_2098628_ds_ent_0_access_assignment" name="x_2098628_ds_ent_0_access_assignment" sys_domain="global" view="Default view">4f9a6e8fc3920750bef0d0dc050131fc</sys_ui_form>
+            <sys_ui_section caption="Audit &amp; Review" display_value="Audit &amp; Review" name="x_2098628_ds_ent_0_access_assignment" sys_domain="global" view="Default view">0f9a6e8fc3920750bef0d0dc050131fa</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-30 05:40:45</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_2098628_ds_ent_0_access_assignment</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-30 05:40:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4f9a6e8fc3920750bef0d0dc050131fc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_2098628_ds_ent_0_access_assignment</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="DS Enterprise Access Governance" source="x_2098628_ds_ent_0">7392fe2cc3960310bef0d0dc05013160</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="DS Enterprise Access Governance">7392fe2cc3960310bef0d0dc05013160</sys_scope>
+            <sys_update_name>sys_ui_form_sections_4f9a6e8fc3920750bef0d0dc050131fc</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-30 05:40:44</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

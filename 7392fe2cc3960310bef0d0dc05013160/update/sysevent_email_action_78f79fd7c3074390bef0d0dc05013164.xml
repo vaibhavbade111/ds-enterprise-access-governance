@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_email_action">
+    <sysevent_email_action action="INSERT_OR_UPDATE">
+        <action_insert>true</action_insert>
+        <action_update>true</action_update>
+        <active>true</active>
+        <advanced_condition/>
+        <affected_field_on_event/>
+        <category display_value="Uncategorized" name="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
+        <collection>x_2098628_ds_ent_0_access_request</collection>
+        <condition table="x_2098628_ds_ent_0_access_request">overall_status=submitted^EQ<item display_value="Submitted" endquery="false" field="overall_status" goto="false" newquery="false" operator="=" or="false" value="submitted"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <content_type>text/html</content_type>
+        <default_digest>false</default_digest>
+        <default_interval/>
+        <description/>
+        <digest_from/>
+        <digest_html/>
+        <digest_reply_to/>
+        <digest_separator_html><![CDATA[<p>&nbsp;</p>
+<hr>
+<p>&nbsp;</p>]]></digest_separator_html>
+        <digest_separator_text><![CDATA[\n--------------------------------------------------------------------------------\n]]></digest_separator_text>
+        <digest_subject/>
+        <digest_template/>
+        <digest_text/>
+        <digest_type>single</digest_type>
+        <digestable>false</digestable>
+        <enable_dynamic_translation>false</enable_dynamic_translation>
+        <event_name>activate.life.cycle.migration</event_name>
+        <event_parm_1>false</event_parm_1>
+        <event_parm_2>false</event_parm_2>
+        <exclude_delegates>false</exclude_delegates>
+        <force_delivery>false</force_delivery>
+        <from/>
+        <generation_type>engine</generation_type>
+        <importance/>
+        <include_attachments>false</include_attachments>
+        <item>event.parm1</item>
+        <item_table/>
+        <mandatory>false</mandatory>
+        <message/>
+        <message_html><![CDATA[<p>&lt;p&gt;Hello ${requested_for},&lt;/p&gt;<br>&lt;p&gt;Your access request &lt;strong&gt;${number}&lt;/strong&gt; for application &lt;strong&gt;${application}&lt;/strong&gt; has been successfully submitted and is currently under review.&lt;/p&gt;<br>&lt;p&gt;&lt;strong&gt;Request Details:&lt;/strong&gt;&lt;/p&gt;<br>&lt;ul&gt;<br>&nbsp; &lt;li&gt;&lt;strong&gt;Access Type:&lt;/strong&gt; ${access_type}&lt;/li&gt;<br>&nbsp; &lt;li&gt;&lt;strong&gt;Status:&lt;/strong&gt; ${overall_status}&lt;/li&gt;<br>&lt;/ul&gt;<br>&lt;p&gt;Thank you,&lt;br/&gt;Access Governance Team&lt;/p&gt;</p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>Access Request Submitted Notification</name>
+        <omit_watermark>false</omit_watermark>
+        <order>100</order>
+        <push_message_only>false</push_message_only>
+        <recipient_fields>requested_for</recipient_fields>
+        <recipient_groups/>
+        <recipient_users/>
+        <reply_to/>
+        <send_self>true</send_self>
+        <sms_alternate/>
+        <style/>
+        <subject>Access Request ${number} has been submitted successfully</subject>
+        <subscribable>false</subscribable>
+        <sys_class_name>sysevent_email_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-06 10:39:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>78f79fd7c3074390bef0d0dc05013164</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Access Request Submitted Notification</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="DS Enterprise Access Governance" source="x_2098628_ds_ent_0">7392fe2cc3960310bef0d0dc05013160</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DS Enterprise Access Governance">7392fe2cc3960310bef0d0dc05013160</sys_scope>
+        <sys_update_name>sysevent_email_action_78f79fd7c3074390bef0d0dc05013164</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 06:46:30</sys_updated_on>
+        <sys_version>2</sys_version>
+        <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
+        <type>email</type>
+        <weight>0</weight>
+    </sysevent_email_action>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>78f79fd7c3074390bef0d0dc05013164</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-07 16:32:26</sys_created_on>
+        <sys_id>d1c539b3c3c70790bef0d0dc05013137</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-07 16:32:26</sys_updated_on>
+        <table>sysevent_email_action</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

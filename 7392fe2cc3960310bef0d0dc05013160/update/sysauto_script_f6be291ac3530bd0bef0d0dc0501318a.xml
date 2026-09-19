@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <advanced>true</advanced>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_run_end/>
+        <entered_run_start/>
+        <entered_time>1970-01-01 00:00:00</entered_time>
+        <max_drift/>
+        <name>Run Automated Access Revocation</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <repeat_every/>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_daysofweek/>
+        <run_end/>
+        <run_month>1</run_month>
+        <run_period/>
+        <run_start>2026-09-15 10:26:28</run_start>
+        <run_time>1970-01-01 10:00:00</run_time>
+        <run_type>daily</run_type>
+        <run_weekinmonth>1</run_weekinmonth>
+        <script><![CDATA[(function() {
+    var gr = new GlideRecord('x_2098628_ds_ent_0_access_request');
+    gr.addQuery('active', true);
+    gr.addQuery('expiry_date', '<=', gs.daysAgoEnd(0));
+    gr.addQuery('overall_status', '!=', 'revoked');
+    gr.query();
+    
+    gs.info('DEBUG: Total expired records found = ' + gr.getRowCount());
+    
+    while (gr.next()) {
+        gs.info('DEBUG: Processing record number -> ' + gr.getValue('number') + ' (sys_id: '  + gr.getUniqueValue() + ')');
+        try {
+            var inputs = {};
+            // Passing the GlideRecord object directly to the record input type
+            inputs['access_request_record'] = gr; 
+            
+            sn_fd.FlowAPI.executeSubflow('x_2098628_ds_ent_0.automated_access_revocation_handler', inputs);
+            
+            gs.info('DEBUG: Successfully triggered subflow for record: ' + gr.getValue('number'));
+        } catch (ex) {
+            gs.error('DEBUG ERROR in revocation subflow: ' + ex.getMessage());
+        }
+    }
+})();]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-15 10:29:06</sys_created_on>
+        <sys_id>f6be291ac3530bd0bef0d0dc0501318a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Run Automated Access Revocation</sys_name>
+        <sys_package display_value="DS Enterprise Access Governance" source="x_2098628_ds_ent_0">7392fe2cc3960310bef0d0dc05013160</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DS Enterprise Access Governance">7392fe2cc3960310bef0d0dc05013160</sys_scope>
+        <sys_update_name>sysauto_script_f6be291ac3530bd0bef0d0dc0501318a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-15 19:01:23</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>
