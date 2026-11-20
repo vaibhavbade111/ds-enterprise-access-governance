@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="7b2da26ec3d20350bef0d0dc050131ac" label="Access Assignment" max_length="40" name="x_2098628_ds_ent_0_access_assignment" type="collection">
+        <element label="&#9;Application" mandatory="true" max_length="32" name="application" reference="x_2098628_ds_ent_0_access_application" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <element label="Last Modified Reason" max_length="500" name="last_modified_reason" type="string"/>
+        <element choice="1" default="Active" label="Status" mandatory="true" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Expired" sequence="200" value="expired"/>
+                <element inactive_on_update="false" label="Suspended" sequence="400" value="suspended"/>
+                <element inactive_on_update="false" label="Active" sequence="100" value="active"/>
+                <element inactive_on_update="false" label="Revoked" sequence="300" value="revoked"/>
+            </choice>
+        </element>
+        <element choice="1" default="Pending" label="Provisioning Status" mandatory="true" max_length="40" name="provisioning_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Failed" sequence="400" value="failed"/>
+                <element inactive_on_update="false" label="Pending" sequence="100" value="pending"/>
+                <element inactive_on_update="false" label="In Progress" sequence="200" value="in_progress"/>
+                <element inactive_on_update="false" label="Completed" sequence="300" value="completed"/>
+            </choice>
+        </element>
+        <element choice="1" default="Read" label="Access Level" mandatory="true" max_length="40" name="access_level" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Full Control" sequence="400" value="full_control"/>
+                <element inactive_on_update="false" label="Admin" sequence="300" value="admin"/>
+                <element inactive_on_update="false" label="Read" sequence="100" value="read"/>
+                <element inactive_on_update="false" label="Write" sequence="200" value="write"/>
+            </choice>
+        </element>
+        <element label="Audit Comments" max_length="255" name="audit_comments" type="string_full_utf8"/>
+        <element label="Assigned Role" max_length="150" name="assigned_role" type="string"/>
+        <element display="true" label="&#9;Access Request" mandatory="true" max_length="32" name="access_request" reference="x_2098628_ds_ent_0_access_request" type="reference"/>
+        <element label="&#9;Access Type" mandatory="true" max_length="32" name="access_type" reference="x_2098628_ds_ent_0_access_type" type="reference"/>
+        <element label="&#9;User" mandatory="true" max_length="32" name="user" reference="sys_user" type="reference"/>
+        <element label="Expiry Date" max_length="40" name="expiry_date" type="glide_date"/>
+        <element label="Revoked By" max_length="32" name="revoked_by" reference="sys_user" type="reference"/>
+        <element choice="1" default="Pending" label="Review Status" max_length="40" name="review_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Certified" sequence="200" value="certified"/>
+                <element inactive_on_update="false" label="Revoked" sequence="300" value="revoked"/>
+                <element inactive_on_update="false" label="Pending" sequence="100" value="pending"/>
+                <element inactive_on_update="false" label="Needs Review" sequence="400" value="needs_review"/>
+            </choice>
+        </element>
+        <element label="Employee ID" max_length="50" name="employee_id" type="string"/>
+        <element label="Reviewed By" max_length="32" name="reviewed_by" reference="sys_user" type="reference"/>
+        <element label="Last Reviewed Date" max_length="40" name="last_reviewed_date" type="glide_date"/>
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element choice="1" default="Production" label="Environment" mandatory="true" max_length="40" name="environment" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Production" sequence="100" value="production"/>
+                <element inactive_on_update="false" label="UAT" sequence="200" value="uat"/>
+                <element inactive_on_update="false" label="QA" sequence="300" value="qa"/>
+                <element inactive_on_update="false" label="Development" sequence="400" value="development"/>
+            </choice>
+        </element>
+        <element choice="1" default="Manual" label="Provisioning Method" mandatory="true" max_length="40" name="provisioning_method" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Integration" sequence="300" value="integration"/>
+                <element inactive_on_update="false" label="Flow Designer" sequence="200" value="flow_designer"/>
+                <element inactive_on_update="false" label="API" sequence="400" value="api"/>
+                <element inactive_on_update="false" label="Manual" sequence="100" value="manual"/>
+            </choice>
+        </element>
+        <element label="Granted Date" mandatory="true" max_length="40" name="granted_date" type="glide_date_time"/>
+        <element label="Department" mandatory="true" max_length="32" name="department" reference="x_2098628_ds_ent_0_department" type="reference"/>
+        <element label="Revocation Reason" max_length="255" name="revocation_reason" type="string"/>
+        <element label="Granted By" max_length="32" name="granted_by" reference="sys_user" type="reference"/>
+        <element label="Business Unit" mandatory="true" max_length="32" name="business_unit" reference="x_2098628_ds_ent_0_business_unit" type="reference"/>
+        <element label="Revoked Date" max_length="40" name="revoked_date" type="glide_date_time"/>
+        <index name="index">
+            <element name="access_request"/>
+        </index>
+        <index name="index2">
+            <element name="access_type"/>
+        </index>
+        <index name="index3">
+            <element name="application"/>
+        </index>
+        <index name="index4">
+            <element name="business_unit"/>
+        </index>
+        <index name="index5">
+            <element name="department"/>
+        </index>
+        <index name="index6">
+            <element name="granted_by"/>
+        </index>
+        <index name="index7">
+            <element name="reviewed_by"/>
+        </index>
+        <index name="index8">
+            <element name="revoked_by"/>
+        </index>
+        <index name="index9">
+            <element name="user"/>
+        </index>
+    </element>
+</database>

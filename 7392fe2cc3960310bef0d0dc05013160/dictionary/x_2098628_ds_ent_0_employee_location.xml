@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="b573b842c356cb10bef0d0dc050131d7" label="Employee Location" max_length="40" name="x_2098628_ds_ent_0_employee_location" type="collection">
+        <element default="True" label="Active" max_length="40" name="active" type="boolean"/>
+        <element choice="1" label="Region" mandatory="true" max_length="40" name="region" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="EMEA" value="emea"/>
+                <element inactive_on_update="false" label="APAC" value="apac"/>
+                <element inactive_on_update="false" label="North America" value="na"/>
+                <element inactive_on_update="false" label="South America" value="sa"/>
+            </choice>
+        </element>
+        <element label="Location Code" mandatory="true" max_length="20" name="location_code" type="string"/>
+        <element display="true" label="Location Name" mandatory="true" max_length="100" name="location_name" type="string"/>
+        <element label="Description" max_length="255" name="description" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="3f588c74c3524310bef0d0dc05013108" label="Access Type" max_length="40" name="x_2098628_ds_ent_0_access_type" type="collection">
+        <element label="Description" max_length="255" name="description" type="string"/>
+        <element display="true" label="Access Type Name" mandatory="true" max_length="100" name="access_type_name" type="string"/>
+        <element default="True" label="Active" max_length="255" name="active" type="boolean"/>
+    </element>
+</database>

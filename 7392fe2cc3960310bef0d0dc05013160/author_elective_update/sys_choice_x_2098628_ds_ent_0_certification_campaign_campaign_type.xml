@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="campaign_type" table="x_2098628_ds_ent_0_certification_campaign" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>campaign_type</element>
+            <name>x_2098628_ds_ent_0_certification_campaign</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-03 16:01:14</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>campaign_type</sys_name>
+            <sys_package display_value="DS Enterprise Access Governance" source="x_2098628_ds_ent_0">7392fe2cc3960310bef0d0dc05013160</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="DS Enterprise Access Governance">7392fe2cc3960310bef0d0dc05013160</sys_scope>
+            <sys_update_name>sys_choice_x_2098628_ds_ent_0_certification_campaign_campaign_type</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-03 16:01:14</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>campaign_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Quarterly</label>
+            <language>en</language>
+            <name>x_2098628_ds_ent_0_certification_campaign</name>
+            <sequence>100</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-03 16:01:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-03 16:01:26</sys_updated_on>
+            <value>quarterly</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>campaign_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Half Yearly</label>
+            <language>en</language>
+            <name>x_2098628_ds_ent_0_certification_campaign</name>
+            <sequence>200</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-03 16:01:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-03 16:01:53</sys_updated_on>
+            <value>half_yearly</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>campaign_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Annual</label>
+            <language>en</language>
+            <name>x_2098628_ds_ent_0_certification_campaign</name>
+            <sequence>300</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-03 16:02:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-03 16:02:15</sys_updated_on>
+            <value>annual</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>campaign_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Ad Hoc</label>
+            <language>en</language>
+            <name>x_2098628_ds_ent_0_certification_campaign</name>
+            <sequence>400</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-03 16:02:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-03 16:02:37</sys_updated_on>
+            <value>ad_hoc</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

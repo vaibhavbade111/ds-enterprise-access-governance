@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="89b0e0b4c3164310bef0d0dc050131d1" label="Department" max_length="40" name="x_2098628_ds_ent_0_department" type="collection">
+        <element label="Description" max_length="255" name="description" type="string"/>
+        <element label="Department Code" mandatory="true" max_length="20" name="department_code" type="string"/>
+        <element display="true" label="Department Name" mandatory="true" max_length="100" name="department_name" type="string"/>
+        <element label="Department Head" max_length="32" name="department_head" reference="sys_user" type="reference"/>
+        <element default="True" label="Active" max_length="40" name="active" type="boolean"/>
+        <index name="index">
+            <element name="department_head"/>
+        </index>
+    </element>
+</database>

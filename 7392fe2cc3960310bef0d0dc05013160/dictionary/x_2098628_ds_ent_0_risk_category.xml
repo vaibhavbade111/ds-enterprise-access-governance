@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="9c2df3c5c3de0710bef0d0dc050131d6" label="Risk Category" max_length="40" name="x_2098628_ds_ent_0_risk_category" type="collection">
+        <element default="True" label="Active" max_length="40" name="active" type="boolean"/>
+        <element default="True" label="Approval Required" max_length="40" name="approval_required" type="boolean"/>
+        <element label="Description" max_length="255" name="description" type="string"/>
+        <element label="Risk Score" mandatory="true" max_length="40" name="risk_score" type="integer"/>
+        <element display="true" label="Risk Name" mandatory="true" max_length="50" name="risk_name" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="d36c0909c35ac310bef0d0dc0501310d" label="Business Unit" max_length="40" name="x_2098628_ds_ent_0_business_unit" type="collection">
+        <element display="true" label="Business Unit Name" mandatory="true" max_length="100" name="business_unit_name" type="string"/>
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Business Unit Code" mandatory="true" max_length="20" name="business_unit_code" type="string"/>
+        <element label="Business Unit Manager" max_length="32" name="business_unit_manager" reference="sys_user" type="reference"/>
+        <element label="Description" max_length="255" name="description" type="string"/>
+        <index name="index">
+            <element name="business_unit_manager"/>
+        </index>
+    </element>
+</database>

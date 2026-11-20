@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="913b9c30c3a24390bef0d0dc050131b3" label="Certification Task" max_length="40" name="x_2098628_ds_ent_0_certification_task" type="collection">
+        <element label="Application" mandatory="true" max_length="32" name="application" reference="x_2098628_ds_ent_0_access_application" type="reference"/>
+        <element label="Access Type" mandatory="true" max_length="32" name="access_type" reference="x_2098628_ds_ent_0_access_type" type="reference"/>
+        <element default="Current Date/Time (Use Dynamic Default if available, otherwise Blank)" label="Assigned Date" mandatory="true" max_length="40" name="assigned_date" type="glide_date_time"/>
+        <element label="Employee" mandatory="true" max_length="32" name="employee" reference="sys_user" type="reference"/>
+        <element label="Escalated To" max_length="32" name="escalated_to" reference="sys_user" type="reference"/>
+        <element label="Escalated" max_length="40" name="escalated" type="boolean"/>
+        <element label="Notes" max_length="4000" name="notes" type="string_full_utf8"/>
+        <element choice="1" label="Decision" max_length="40" name="decision" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Revoke Access" sequence="200" value="revoke"/>
+                <element inactive_on_update="false" label="Modify Access" sequence="300" value="modify"/>
+                <element inactive_on_update="false" label="Retain Access" sequence="100" value="retain"/>
+            </choice>
+        </element>
+        <element display="true" label="Certification Campaign" mandatory="true" max_length="32" name="certification_campaign" reference="x_2098628_ds_ent_0_certification_campaign" type="reference"/>
+        <element label="Reminder Sent" max_length="40" name="reminder_sent" type="boolean"/>
+        <element choice="1" default="Pending" label="Task Status" mandatory="true" max_length="40" name="task_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="In Progress" sequence="200" value="in_progress"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="400" value="cancelled"/>
+                <element inactive_on_update="false" label="Completed" sequence="300" value="completed"/>
+                <element inactive_on_update="false" label="Pending" sequence="100" value="pending"/>
+            </choice>
+        </element>
+        <element label="Due Date" mandatory="true" max_length="40" name="due_date" type="glide_date"/>
+        <element label="Reviewer" mandatory="true" max_length="32" name="reviewer" reference="sys_user" type="reference"/>
+        <element label="Business Justification" max_length="4000" name="business_justification" type="string_full_utf8"/>
+        <element label="Decision Date" max_length="40" name="decision_date" type="glide_date_time"/>
+        <element label="Review Comments" max_length="4000" name="review_comments" type="string_full_utf8"/>
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element choice="1" default="Medium" label="Priority" mandatory="true" max_length="40" name="priority" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Low" sequence="100" value="low"/>
+                <element inactive_on_update="false" label="Critical" sequence="400" value="critical"/>
+                <element inactive_on_update="false" label="Medium" sequence="200" value="medium"/>
+                <element inactive_on_update="false" label="High" sequence="300" value="high"/>
+            </choice>
+        </element>
+        <element label="Access Review" mandatory="true" max_length="32" name="access_review" reference="x_2098628_ds_ent_0_access_review" type="reference"/>
+        <element label="Evidence Attached" max_length="40" name="evidence_attached" type="boolean"/>
+        <index name="index">
+            <element name="access_review"/>
+        </index>
+        <index name="index2">
+            <element name="access_type"/>
+        </index>
+        <index name="index3">
+            <element name="application"/>
+        </index>
+        <index name="index4">
+            <element name="certification_campaign"/>
+        </index>
+        <index name="index5">
+            <element name="employee"/>
+        </index>
+        <index name="index6">
+            <element name="escalated_to"/>
+        </index>
+        <index name="index7">
+            <element name="reviewer"/>
+        </index>
+    </element>
+</database>

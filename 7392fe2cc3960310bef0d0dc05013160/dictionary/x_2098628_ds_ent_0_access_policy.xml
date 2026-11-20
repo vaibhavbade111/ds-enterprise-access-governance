@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="04ff3b4dc3de0710bef0d0dc0501319c" label="Access Policy" max_length="40" name="x_2098628_ds_ent_0_access_policy" type="collection">
+        <element default="True" label="Application Owner Approval Required" max_length="40" name="application_owner_approval_required" type="boolean"/>
+        <element label="Description" max_length="255" name="description" type="string"/>
+        <element display="true" label="Policy Name" mandatory="true" max_length="100" name="policy_name" type="string"/>
+        <element label="Auto Expiry (Days)" mandatory="true" max_length="40" name="auto_expiry_days" type="integer"/>
+        <element default="True" label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Application" mandatory="true" max_length="32" name="application" reference="x_2098628_ds_ent_0_access_application" type="reference"/>
+        <element default="True" label="Manager Approval Required" max_length="40" name="manager_approval_required" type="boolean"/>
+        <element label="Risk Category" mandatory="true" max_length="32" name="risk_category" reference="x_2098628_ds_ent_0_risk_category" type="reference"/>
+        <element choice="1" label="Review Frequency" mandatory="true" max_length="40" name="review_frequency" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Yearly" value="yearly"/>
+                <element inactive_on_update="false" label="Half Yearly" value="half_yearly"/>
+                <element inactive_on_update="false" label="Quarterly" value="quarterly"/>
+                <element inactive_on_update="false" label="Monthly" value="monthly"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="application"/>
+        </index>
+        <index name="index2">
+            <element name="risk_category"/>
+        </index>
+    </element>
+</database>

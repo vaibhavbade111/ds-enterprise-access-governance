@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="8a59f9ffc39e4b50bef0d0dc050131ea" label="Access Review" max_length="40" name="x_2098628_ds_ent_0_access_review" type="collection">
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Campaign Name" max_length="150" name="campaign_name" type="string"/>
+        <element label="Business Justification" max_length="4000" name="business_justification" type="string_full_utf8"/>
+        <element label="Reminder Sent" max_length="40" name="reminder_sent" type="boolean"/>
+        <element label="Notes" max_length="4000" name="notes" type="string_full_utf8"/>
+        <element label="Reviewer" mandatory="true" max_length="32" name="reviewer" reference="sys_user" type="reference"/>
+        <element label="Review Comments" max_length="4000" name="review_comments" type="string_full_utf8"/>
+        <element choice="1" default="Scheduled Job" label="Review Source" mandatory="true" max_length="40" name="review_source" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Scheduled Job" sequence="100" value="scheduled"/>
+                <element inactive_on_update="false" label="Audit Request" sequence="300" value="audit"/>
+                <element inactive_on_update="false" label="Compliance Campaign" sequence="400" value="compliance"/>
+                <element inactive_on_update="false" label="Manual" sequence="200" value="manual"/>
+            </choice>
+        </element>
+        <element choice="1" default="Pending" label="Review Status" mandatory="true" max_length="40" name="review_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Cancelled" sequence="400" value="cancelled"/>
+                <element inactive_on_update="false" label="In Progress" sequence="200" value="in_progress"/>
+                <element inactive_on_update="false" label="Completed" sequence="300" value="completed"/>
+                <element inactive_on_update="false" label="Pending" sequence="100" value="pending"/>
+            </choice>
+        </element>
+        <element label="Last Updated Reason" max_length="255" name="last_updated_reason" type="string"/>
+        <element label="Escalated To" max_length="32" name="escalated_to" reference="sys_user" type="reference"/>
+        <element choice="1" default="Retain Access" label="Decision" mandatory="true" max_length="40" name="decision" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Modify Access" sequence="300" value="modify"/>
+                <element inactive_on_update="false" label="Revoke Access" sequence="200" value="revoke"/>
+                <element inactive_on_update="false" label="Retain Access" sequence="100" value="retain"/>
+            </choice>
+        </element>
+        <element display="true" label="Access Assignment" mandatory="true" max_length="32" name="access_assignment" reference="x_2098628_ds_ent_0_access_assignment" type="reference"/>
+        <element label="Review Due Date" mandatory="true" max_length="40" name="review_due_date" type="glide_date"/>
+        <element label="Evidence Attached" max_length="40" name="evidence_attached" type="boolean"/>
+        <element label="Escalated" max_length="40" name="escalated" type="boolean"/>
+        <element label="Review Name" mandatory="true" max_length="150" name="review_name" type="string"/>
+        <element label="Decision Date" max_length="40" name="decision_date" type="glide_date_time"/>
+        <element label="Next Review Date" max_length="40" name="next_review_date" type="glide_date"/>
+        <element choice="1" default="Quarterly" label="Review Type" mandatory="true" max_length="40" name="review_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Ad Hoc" sequence="400" value="ad_hoc"/>
+                <element inactive_on_update="false" label="Quarterly" sequence="100" value="quarterly"/>
+                <element inactive_on_update="false" label="Annual" sequence="300" value="annual"/>
+                <element inactive_on_update="false" label="Half Yearly" sequence="200" value="half_yearly"/>
+            </choice>
+        </element>
+        <element label="Certification Campaign" mandatory="true" max_length="32" name="certification_campaign" reference="x_2098628_ds_ent_0_certification_campaign" type="reference"/>
+        <index name="index">
+            <element name="access_assignment"/>
+        </index>
+        <index name="index2">
+            <element name="certification_campaign"/>
+        </index>
+        <index name="index3">
+            <element name="escalated_to"/>
+        </index>
+        <index name="index4">
+            <element name="reviewer"/>
+        </index>
+    </element>
+</database>

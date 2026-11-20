@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="d7053e60c3d60310bef0d0dc0501319d" label="Access Application" max_length="40" name="x_2098628_ds_ent_0_access_application" type="collection">
+        <element label="Application Owner" max_length="32" name="application_owner" reference="sys_user" type="reference"/>
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element display="true" label="Application Name" mandatory="true" max_length="100" name="application_name" type="string"/>
+        <element label="Description" max_length="255" name="description" type="string"/>
+        <element choice="1" label="Criticality" mandatory="true" max_length="40" name="criticality" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Critical" sequence="3" value="critical"/>
+                <element inactive_on_update="false" label="Medium" sequence="1" value="medium"/>
+                <element inactive_on_update="false" label="High" sequence="2" value="high"/>
+                <element inactive_on_update="false" label="Low" sequence="0" value="low"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="application_owner"/>
+        </index>
+    </element>
+</database>

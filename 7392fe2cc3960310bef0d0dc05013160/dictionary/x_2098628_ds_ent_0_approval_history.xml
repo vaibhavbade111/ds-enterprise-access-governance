@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="0391397fc35e4b50bef0d0dc05013191" label="Approval History" max_length="40" name="x_2098628_ds_ent_0_approval_history" type="collection">
+        <element label="Reminder Sent" max_length="40" name="reminder_sent" type="boolean"/>
+        <element label="Rejection Reason" max_length="4000" name="rejection_reason" type="string_full_utf8"/>
+        <element label="Notes" max_length="4000" name="notes" type="string_full_utf8"/>
+        <element label="Approval Due Date" max_length="40" name="approval_due_date" type="glide_date_time"/>
+        <element label="Escalated" max_length="40" name="escalated" type="boolean"/>
+        <element label="Escalated To" max_length="32" name="escalated_to" reference="sys_user" type="reference"/>
+        <element choice="1" default="Pending" label="Approval Status" mandatory="true" max_length="40" name="approval_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Rejected" sequence="300" value="rejected"/>
+                <element inactive_on_update="false" label="Pending" sequence="100" value="pending"/>
+                <element inactive_on_update="false" label="Approved" sequence="200" value="approved"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="400" value="cancelled"/>
+                <element inactive_on_update="false" label="Skipped" sequence="500" value="skipped"/>
+            </choice>
+        </element>
+        <element label="SLA Breached" max_length="40" name="sla_breached" type="boolean"/>
+        <element choice="1" default="Manager" label="Approval Level" mandatory="true" max_length="40" name="approval_level" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Manager" sequence="100" value="manager"/>
+                <element inactive_on_update="false" label="Compliance" sequence="400" value="compliance"/>
+                <element inactive_on_update="false" label="Application Owner" sequence="200" value="application_owner"/>
+                <element inactive_on_update="false" label="Emergency" sequence="500" value="emergency"/>
+                <element inactive_on_update="false" label="Security" sequence="300" value="security"/>
+            </choice>
+        </element>
+        <element choice="1" default="Flow Designer" label="Approval Source" mandatory="true" max_length="40" name="approval_source" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Flow Designer" sequence="100" value="flow_designer"/>
+                <element inactive_on_update="false" label="Import" sequence="400" value="import"/>
+                <element inactive_on_update="false" label="API" sequence="300" value="api"/>
+                <element inactive_on_update="false" label="Manual" sequence="200" value="manual"/>
+            </choice>
+        </element>
+        <element label="Decision Date" max_length="40" name="decision_date" type="glide_date_time"/>
+        <element label="Approver" mandatory="true" max_length="32" name="approver" reference="sys_user" type="reference"/>
+        <element display="true" label="Access Request" mandatory="true" max_length="32" name="access_request" reference="x_2098628_ds_ent_0_access_request" type="reference"/>
+        <element label="Delegation Date" max_length="40" name="delegation_date" type="glide_date_time"/>
+        <element label="Delegated To" max_length="32" name="delegated_to" reference="sys_user" type="reference"/>
+        <element label="Comments" max_length="4000" name="comments" type="string_full_utf8"/>
+        <element label="Last Updated Reason" max_length="255" name="last_updated_reason" type="string"/>
+        <element default="1" label="Approval Sequence" mandatory="true" max_length="40" name="approval_sequence" type="integer"/>
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element choice="1" default="Sequential" label="Approval Method" mandatory="true" max_length="40" name="approval_method" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Manual" sequence="300" value="manual"/>
+                <element inactive_on_update="false" label="Sequential" sequence="100" value="sequential"/>
+                <element inactive_on_update="false" label="Parallel" sequence="200" value="parallel"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="access_request"/>
+        </index>
+        <index name="index2">
+            <element name="approver"/>
+        </index>
+        <index name="index3">
+            <element name="delegated_to"/>
+        </index>
+        <index name="index4">
+            <element name="escalated_to"/>
+        </index>
+    </element>
+</database>
